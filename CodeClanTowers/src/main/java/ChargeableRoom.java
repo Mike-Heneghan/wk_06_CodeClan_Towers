@@ -1,5 +1,5 @@
 public abstract class ChargeableRoom extends Room {
-    private double totalFees;
+    protected double totalFees;
 
     public ChargeableRoom (Integer capacity) {
         super(capacity);

@@ -8,8 +8,32 @@ public class ConferenceRoom extends ChargeableRoom {
         super(capacity);
         this.name = name;
         this.dailyRate = dailyRate;
-        this.speaker = "T.B>C";
+        this.speaker = "T.B.C";
         this.bookingStatus = false;
     }
+
+    public String getName(){
+        return name;
+    }
+
+    public double getDailyRate(){
+        return dailyRate;
+    }
+
+    public String getSpeaker(){
+        return speaker;
+    }
+
+    public Boolean getBookingStatus(){
+        return bookingStatus;
+    }
+
+    public void roomBooked(int days, String speaker){
+        totalFees += dailyRate * days;
+        this.speaker = speaker;
+        bookingStatus = true;
+
+    }
+
 
 }
