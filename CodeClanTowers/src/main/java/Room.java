@@ -19,4 +19,31 @@ public abstract class Room {
     public ArrayList<Guest> getGuests() {
         return guests;
     }
+
+    public void addGuest(Guest guest){
+        guests.add(guest);
+    }
+
+    public RoomId getRoomId(){
+        return uniqueId;
+    }
+
+    public Guest removeGuestFromRoom(Guest guest) {
+        int i = 0;
+        for (Guest g : guests) {
+            if(g.getName() == guest.getName()) {
+                i = guests.indexOf(g);
+            }
+        }
+        return guests.remove(i);
+    }
+
+    public double getRate(){
+        return getRate();
+    }
+
+    public void roomBooked(int days, String speaker){
+    }
+
+
 }

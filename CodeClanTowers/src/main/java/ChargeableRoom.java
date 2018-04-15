@@ -9,4 +9,5 @@ public abstract class ChargeableRoom extends Room {
     public double getTotalFees(){
         return totalFees;
     }
+
 }

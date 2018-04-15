@@ -16,6 +16,10 @@ public class ConferenceRoom extends ChargeableRoom {
         return name;
     }
 
+    public double getRate(){
+        return 0.00;
+    }
+
     public double getDailyRate(){
         return dailyRate;
     }
@@ -29,7 +33,7 @@ public class ConferenceRoom extends ChargeableRoom {
     }
 
     public void roomBooked(int days, String speaker){
-        totalFees += dailyRate * days;
+        totalFees += (dailyRate * days);
         this.speaker = speaker;
         bookingStatus = true;
 
