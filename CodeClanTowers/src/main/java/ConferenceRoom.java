@@ -4,8 +4,8 @@ public class ConferenceRoom extends ChargeableRoom {
     private String speaker;
     private boolean bookingStatus;
 
-    public ConferenceRoom(Integer capacity, String name, double dailyRate) {
-        super(capacity);
+    public ConferenceRoom(Integer capacity, RoomId uniqueId, String name, double dailyRate) {
+        super(capacity, uniqueId);
         this.name = name;
         this.dailyRate = dailyRate;
         this.speaker = "T.B.C";

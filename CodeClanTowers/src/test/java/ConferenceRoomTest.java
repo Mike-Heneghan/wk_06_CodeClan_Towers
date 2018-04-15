@@ -8,7 +8,7 @@ public class ConferenceRoomTest {
 
     @Before
     public void before() {
-        venue1 = new ConferenceRoom(100,"Winchester Room",2000.00);
+        venue1 = new ConferenceRoom(100, RoomId.ROOM1,"Winchester Room",2000.00);
     }
 
     @Test
@@ -43,6 +43,6 @@ public class ConferenceRoomTest {
         assertEquals(true, venue1.getBookingStatus());
         assertEquals(10000.00, venue1.getTotalFees(), 0.001);
     }
-    
+
 
 }

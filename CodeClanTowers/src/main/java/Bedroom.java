@@ -2,8 +2,8 @@ public class Bedroom extends ChargeableRoom {
     private Integer roomNumber;
     private BedroomType type;
 
-    public Bedroom (Integer roomNumber, BedroomType type){
-        super(type.getCapacity());
+    public Bedroom (RoomId uniqueId, Integer roomNumber, BedroomType type){
+        super(type.getCapacity(), uniqueId);
         this.roomNumber = roomNumber;
         this.type = type;
     }
