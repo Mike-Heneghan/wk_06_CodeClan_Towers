@@ -8,4 +8,15 @@ public class Bedroom extends ChargeableRoom {
         this.type = type;
     }
 
+    public int getRoomNumber(){
+        return roomNumber;
+    }
+
+    public BedroomType getType(){
+        return type;
+    }
+
+    public double getRate(){
+        return type.getRate();
+    }
 }

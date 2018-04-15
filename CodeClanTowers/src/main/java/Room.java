@@ -10,7 +10,7 @@ public abstract class Room {
 
     }
 
-    public Integer getCapacity(){
+    public int getCapacity(){
         return capacity;
     }
 
